@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resume-Mohasin</title>
+
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+</head>
+<body>
+    
+    <!-- navbar -->
+    <nav id="navbar">
+        <div class="logo">Mohasin Patel</div>
+        <div>
+            <ul class="nav-links">
+                <li><a href="#">About</a></li>
+                <li><a href="#">Experience</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- hamburger nav -->
+    <nav id="hamburger-nav">
+        <div class="logo">Mohasin Patel</div>
+        <div class="hamburger-menu">
+            <div class="hamburger-icon" onclick="toggleMenu()">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <div class="menu-links">
+                <ul >
+                    <li><a href="#" onclick="toggleMenu()">About</a></li>
+                    <li><a href="#" onclick="toggleMenu()">Experience</a></li>
+                    <li><a href="#" onclick="toggleMenu()">Projects</a></li>
+                    <li><a href="#" onclick="toggleMenu()">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- profile section -->
+
+    <section id="profile">
+        <div class="section__pic-container">
+            <img src="assets/profile-pic.png" alt="Mohasin Patel Profile Image">
+        </div>
+
+        <div class="section__text">
+            <p class="section__text__p1">Hello, I'm</p>
+            <h1 class="title">Mohasin Patel</h1>
+            <p class="section__text__p2">Fullstack Developer</p>
+        </div>
+
+        <div class="btn-container">
+            <button 
+                class="btn btn-color-2"
+                onclick='window.open("assets/resume-example.pdf")'
+            >Download CV</button>
+        
+            <button class="btn btn-color-2" onclick="location.href='#contact'">
+                Contact
+            </button>
+        </div>
+
+        <div class="social-container">
+            <img src="assets/linkedin.png" alt="linkedin profile" onclick="location.href='#'">
+            <img src="assets/github.png" alt="github profile" onclick="location.href='#'">
+        </div>
+
+    </section>
+
+    <!-- script -->
+    <script src="scripts/script.js" charset="UTF-8"></script>
+</body>
+</html>
